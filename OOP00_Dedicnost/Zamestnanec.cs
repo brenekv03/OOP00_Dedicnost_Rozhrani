@@ -8,10 +8,10 @@ namespace OOP00_Dedicnost
 {
     class Zamestnanec
     {
-        private string jmeno;
-        private string prijmeni;
-        private int odpracHodiny = 0;
-        public double HodinovaMzda { get; }
+        protected string jmeno; //protected - soukromý atribut určený k dědění
+        protected string prijmeni;
+        protected int odpracHodiny = 0;
+        public double HodinovaMzda { get;}
         public Zamestnanec(string jmeno, string prijmeni, double hodinovaMzda)
         {
             this.jmeno = jmeno;
