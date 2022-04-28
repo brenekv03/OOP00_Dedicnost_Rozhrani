@@ -9,9 +9,19 @@ namespace OOP00_Dedicnost
     class Vedouci:Zamestnanec
     {
         private double priplatekZaVedeni;
+
         public Vedouci(string jmeno, string prijmeni, double hodinovaMzda, double priplatekZaVedeni) : base(jmeno,prijmeni,hodinovaMzda)
         {
             this.priplatekZaVedeni = priplatekZaVedeni;
         }
+        public double GetPriplatekZaVedeni()
+        {
+            return priplatekZaVedeni;
+        }
+        public void SetPriplatekZaVedeni(double priplatekZaVedeni)
+        {
+            this.priplatekZaVedeni = priplatekZaVedeni;
+        }
     }
+    
 }
