@@ -22,6 +22,14 @@ namespace OOP00_Dedicnost
         {
             this.priplatekZaVedeni = priplatekZaVedeni;
         }
+        public override double VypoctiMzdu()
+        {
+            return base.VypoctiMzdu() + priplatekZaVedeni;
+        }
+        public override string ToString()
+        {
+            return base.ToString() + "\nPříplatek za vedení" + priplatekZaVedeni;
+        }
     }
     
 }

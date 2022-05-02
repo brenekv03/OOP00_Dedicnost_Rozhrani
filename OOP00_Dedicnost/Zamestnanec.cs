@@ -30,11 +30,11 @@ namespace OOP00_Dedicnost
         {
             this.prijmeni = prijmeni;
         }
-        public void OdpracujHodiny(int hodiny)
+        public virtual void OdpracujHodiny(int hodiny)
         {
             odpracHodiny += hodiny;
         }
-        public double VypoctiMzdu()
+        public virtual double VypoctiMzdu() //virtual - potomci mohou metodu přepsat
         {
             return odpracHodiny * HodinovaMzda;
         }

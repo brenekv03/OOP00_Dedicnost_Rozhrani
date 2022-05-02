@@ -31,7 +31,7 @@ namespace OOP00_Dedicnost
             zamestnanec.OdpracujHodiny(150);
             MessageBox.Show(zamestnanec.ToString());
         }
-
+            
         private void button2_Click(object sender, EventArgs e)
         {
             Vedouci vedouci = new Vedouci("Emil", "K.", 200,300);
