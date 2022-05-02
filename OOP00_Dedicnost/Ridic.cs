@@ -34,9 +34,10 @@ namespace OOP00_Dedicnost
         {
             this.skupina = skupina;
         }
-        public override void OdpracujHodiny(int hodiny, int ujedKilometry)
+        //Opraveno
+        public override void OdpracujHodiny(int hodiny)
         {
-            ujetoCelkem += ujedKilometry;
+            ujetoCelkem += hodiny*50;
             base.OdpracujHodiny(hodiny);
         }
         public override double VypoctiMzdu()
